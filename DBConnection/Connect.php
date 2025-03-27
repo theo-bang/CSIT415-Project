@@ -14,6 +14,7 @@ function connectDB(): void {
     $password = "";
     $dbname = "libman";
     $conn = new mysqli($servername, $username, $password, $dbname);
+    // Adjust the dbname, username and password to access your own database.
 
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
